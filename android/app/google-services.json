@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "356718301171",
+    "project_id": "dr-booking-4cf98",
+    "storage_bucket": "dr-booking-4cf98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356718301171:android:5edddaf192c80b47f24c86",
+        "android_client_info": {
+          "package_name": "com.example.doximity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356718301171-hgic8bf79ig0jdvq8eda6nqqbo4alj56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSgJrjRFUyxxvclJO8BX9SQxkP0mGP4t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356718301171-hgic8bf79ig0jdvq8eda6nqqbo4alj56.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "356718301171-bbqopq0p650jfjjhsncf8nlkr0lcii57.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.doximity"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356718301171:android:dcb8386e89cd0af2f24c86",
+        "android_client_info": {
+          "package_name": "com.example.dr_doximity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356718301171-hgic8bf79ig0jdvq8eda6nqqbo4alj56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSgJrjRFUyxxvclJO8BX9SQxkP0mGP4t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356718301171-hgic8bf79ig0jdvq8eda6nqqbo4alj56.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "356718301171-bbqopq0p650jfjjhsncf8nlkr0lcii57.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.doximity"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
