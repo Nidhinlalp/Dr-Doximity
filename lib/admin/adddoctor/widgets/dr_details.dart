@@ -180,7 +180,7 @@ class DrDetails extends StatelessWidget {
         ),
         keyboardType: TextInputType.emailAddress,
       ),
-      //--------------------------conseltationfee-------------------------------
+      //-conseltationfee-------------------------------
       const SizedBox(
         height: 30,
       ),
