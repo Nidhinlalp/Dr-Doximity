@@ -78,11 +78,15 @@ class SignIn extends StatelessWidget {
                   FadeInRight(
                     child: Column(
                       children: [
-                        SingInButton(
-                          name: 'Sign In',
-                          onPressed: () => signIn(authProvider, context),
-                          formKey: _formKey,
-                        ),
+                        context.watch<AuthProvider>().isLoading
+                            ? const CircularProgressIndicator(
+                                color: Colors.black,
+                              )
+                            : SingInButton(
+                                name: 'Sign In',
+                                onPressed: () => signIn(authProvider, context),
+                                formKey: _formKey,
+                              ),
                         const SizedBox(height: 30),
                         const SignInOrSection(),
                         const SizedBox(height: 30),
