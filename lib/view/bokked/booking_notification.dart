@@ -82,7 +82,7 @@ class _BookingNotificationState extends State<BookingNotification> {
             ),
             ListTile(
               leading: const Icon(Icons.privacy_tip),
-              title: const Text(' Privacy Polycy '),
+              title: const Text(' Privacy Plicy '),
               onTap: () {
                 Navigator.pop(context);
               },
