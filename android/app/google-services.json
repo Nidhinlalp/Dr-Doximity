@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:356718301171:android:5edddaf192c80b47f24c86",
         "android_client_info": {
-          "package_name": "com.example.doximity"
+          "package_name": "in.brototype.drdoximity"
         }
       },
       "oauth_client": [
@@ -34,7 +34,7 @@
               "client_id": "356718301171-bbqopq0p650jfjjhsncf8nlkr0lcii57.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.doximity"
+                "bundle_id": "in.brototype.drdoximity"
               }
             }
           ]
@@ -70,7 +70,7 @@
               "client_id": "356718301171-bbqopq0p650jfjjhsncf8nlkr0lcii57.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.example.doximity"
+                "bundle_id": "in.brototype.drdoximity"
               }
             }
           ]

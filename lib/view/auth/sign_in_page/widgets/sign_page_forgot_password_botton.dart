@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'forget_password.dart';
+
 class SingInForgetPasswordTextBuotton extends StatelessWidget {
   const SingInForgetPasswordTextBuotton({
     super.key,
@@ -14,15 +16,15 @@ class SingInForgetPasswordTextBuotton extends StatelessWidget {
         children: [
           TextButton(
               onPressed: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => ForgetPassword(),
-                //   ),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ForgetPassword(),
+                  ),
+                );
               },
               child: Text(
-                'Forger Password?',
+                'Forget Password?',
                 style: TextStyle(
                     fontSize: 15,
                     color: Colors.grey.shade500,

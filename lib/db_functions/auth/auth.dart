@@ -16,6 +16,7 @@ class AuthProvider with ChangeNotifier {
   final FirebaseAuth _fb;
   AuthProvider(this._fb);
   bool isLoading = false;
+  bool isLoadingReset = false;
   bool isSignUploding = false;
   bool isGoogleLoding = false;
   Stream<User?> stream() => _fb.authStateChanges();
@@ -196,7 +197,7 @@ class AuthProvider with ChangeNotifier {
                 ),
               ),
             ),
-            title: Text(msg),
+            title: Text(msg ?? "Somthing! went to the wrong"),
             //subtitle: const Text('Thanks for checking out my tutorial'),
             trailing: IconButton(
                 icon: const Icon(Icons.close),
@@ -222,4 +223,25 @@ class AuthProvider with ChangeNotifier {
           },
         );
   }
+
+  //-------reset Password------------------------------------------------//
+
+  Future restPassword(BuildContext context, String email) async {
+    try {
+      isLoadingReset = true;
+      notifyListeners();
+      await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+      var snackBar = const SnackBar(content: Text('please check your email'));
+      if (context.mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      }
+      isLoadingReset = false;
+      notifyListeners();
+    } on FirebaseAuthException catch (ex) {
+      isLoadingReset = false;
+      notifyListeners();
+      return Future.value(ex.message);
+    }
+  }
+  //****************************************************************
 }
