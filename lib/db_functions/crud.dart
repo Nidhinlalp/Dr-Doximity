@@ -21,6 +21,7 @@ class Crud with ChangeNotifier {
 
   File? file;
   bool isLoding = false;
+  bool isLodingUpdate = false;
   String? pickedFile;
   void pickFile() async {
     FilePickerResult? result =
@@ -91,7 +92,7 @@ class Crud with ChangeNotifier {
   }
 
   Future<void> updateDoctorDetails(docId) async {
-    isLoding = true;
+    isLodingUpdate = true;
     notifyListeners();
     var docRef = doctors.doc();
     String? profilePicUrl = await uploadFile(docRef.id);
@@ -127,7 +128,7 @@ class Crud with ChangeNotifier {
       };
     }
     doctors.doc(docId).update(data);
-    isLoding = false;
+    isLodingUpdate = false;
     notifyListeners();
   }
 

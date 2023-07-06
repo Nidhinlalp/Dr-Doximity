@@ -38,7 +38,9 @@ class UpdateButton extends StatelessWidget {
               overlayColor: MaterialStateProperty.all(Colors.black),
               backgroundColor: MaterialStateProperty.all(Colors.green),
             ),
-            child: const Text('Update'),
+            child: context.watch<Crud>().isLodingUpdate
+                ? const CircularProgressIndicator()
+                : const Text('Update'),
           ),
         );
       },

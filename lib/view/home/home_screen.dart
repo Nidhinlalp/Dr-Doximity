@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   HomePage({super.key});
 
   final List<Widget> pages = [
-    BookingNotification(),
+    const BookingNotification(),
     Home(),
     const ChatScreen(),
   ];
