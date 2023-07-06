@@ -193,7 +193,6 @@ class DrDetails extends StatelessWidget {
               const EdgeInsets.symmetric(vertical: 17.0, horizontal: 20.0),
           filled: true,
           fillColor: Colors.grey,
-          //labelText: 'Email..',
           hintText: 'Fee..',
           border: const OutlineInputBorder(),
           enabledBorder: OutlineInputBorder(
@@ -227,7 +226,7 @@ class DrDetails extends StatelessWidget {
           filled: true,
           fillColor: Colors.grey,
           //labelText: 'Email..',
-          hintText: 'Experiance..',
+          hintText: 'Experience..',
           border: const OutlineInputBorder(),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(17),
@@ -261,7 +260,7 @@ class DrDetails extends StatelessWidget {
           filled: true,
           fillColor: Colors.grey,
           //labelText: 'Email..',
-          hintText: 'Patiance..',
+          hintText: 'Patients..',
           border: const OutlineInputBorder(),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(17),
